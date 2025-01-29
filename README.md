@@ -104,7 +104,7 @@ To work with LESS in this project, you need to install the LESS preprocessor. Fo
 1. Clone the project repository:
 
    ```bash
-   git clone https://github.com/your-repo/tip-calculator.git
+   git clone https://github.com/Yashi-Singh-9/Tip-Calculator-App
    cd tip-calculator
    ```
 
@@ -123,7 +123,7 @@ To work with LESS in this project, you need to install the LESS preprocessor. Fo
 ## Author
 
 - LinkedIn - [Yashi Singh](https://www.linkedin.com/in/yashi-singh-b4143a246/)
-- Frontend Mentor - [@yashi-singh](https://www.frontendmentor.io/profile/yashi-singh)
+- Frontend Mentor - [Yashi-Singh-9](https://www.frontendmentor.io/profile/Yashi-Singh-9)
 
 ## Acknowledgments
 
