@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacemono/v14/i7dMIFZifjKcF5UAWdDRaPpZYFI.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(185, 41%, 84%) !important;
+}
+main {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  margin: 8rem auto 1.5rem auto;
+  font-size: 1.125rem;
+}
+main .calculator-container {
+  background-color: hsl(0, 0%, 100%);
+}
+@media (max-width: 800px) {
+  main .calculator-container {
+    flex-direction: column !important;
+    width: -webkit-fill-available;
+  }
+}
+main .calculator-container .left-container label {
+  color: hsl(186, 14%, 43%);
+}
+main .calculator-container .left-container input {
+  border: 2px solid hsl(189, 41%, 97%);
+  background-color: hsl(189, 41%, 97%);
+  outline: none;
+  text-align: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
+  transition: 0.3s ease;
+}
+main .calculator-container .left-container input::placeholder {
+  color: hsl(184, 14%, 56%);
+  text-align: right;
+}
+main .calculator-container .left-container input:hover,
+main .calculator-container .left-container input:focus {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+@media (max-width: 800px) {
+  main .calculator-container .left-container input {
+    width: -webkit-fill-available;
+  }
+}
+main .calculator-container .left-container .tip-option {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 15px;
+}
+main .calculator-container .left-container .tip-option button {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.3s ease;
+}
+main .calculator-container .left-container .tip-option button:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+main .calculator-container .left-container .tip-option button.selected {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+main .calculator-container .left-container .tip-option .custom {
+  width: 100%;
+}
+main .calculator-container .left-container .tip-option .custom::placeholder {
+  font-size: 1.2rem;
+  color: hsl(186, 14%, 43%);
+}
+@media (max-width: 400px) {
+  main .calculator-container .left-container .divide {
+    flex-direction: column !important;
+  }
+}
+main .calculator-container .right-container {
+  background-color: hsl(183, 100%, 15%);
+}
+main .calculator-container .right-container .total {
+  gap: 6rem;
+}
+@media (max-width: 400px) {
+  main .calculator-container .right-container .total {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: start !important;
+  }
+}
+main .calculator-container .right-container .total p {
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+}
+main .calculator-container .right-container .total p span {
+  color: hsl(184, 14%, 56%);
+}
+main .calculator-container .right-container .total h1 {
+  color: hsl(172, 67%, 45%);
+  font-size: 3.8rem;
+}
+@media (max-width: 462px) {
+  main .calculator-container .right-container .total h1 {
+    font-size: 2rem;
+  }
+}
+main .calculator-container .right-container .reset {
+  background-color: hsl(183, 100%, 20%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+main .calculator-container .right-container .reset:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+main .calculator-container .right-container .reset.enable {
+  background-color: hsl(172, 67%, 45%);
+}
+footer {
+  color: hsl(183, 100%, 15%);
+}
+footer a,
+footer a:visited {
+  color: hsl(183, 100%, 27%);
+}
